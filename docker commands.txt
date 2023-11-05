@@ -1,0 +1,32 @@
+>build image
+docker build -t my-node-app .
+
+> to run container
+docker container run -d --name my-node-app-c -p 3000:80 my-node-app
+
+> list of images
+docker image ls
+
+> remove images
+docker image rm 643ed33becef
+
+> list of containers
+docker container ls
+
+> bash container
+docker exec -it my-node-app-c bash
+
+> bash image
+docker run --rm -it --entrypoint bash my-node-app
+
+> stop container
+docker container stop 366462c6d02c
+
+> remove container
+docker container rm 366462c6d02c
+
+> run docker image
+docker container run  my-node-app
+
+
+RUN git clone https://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@github.com/dipenbh/sampleNodeApp.git
